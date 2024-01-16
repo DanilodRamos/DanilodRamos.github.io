@@ -1,5 +1,5 @@
 # Olá , eu sou Danilo Ramos!👋
-[![Portfólio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://lojadbr.lojavirtualnuvem.com.br/admin/themes/settings/active/#instatheme=pagina-de-inicio)
+[![Portfólio](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://danilodramos.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danilo-ramos-b01315250/)
 <br>
 [![Uploading portifoliopng.png…]()](https://danilodramos.github.io/)
