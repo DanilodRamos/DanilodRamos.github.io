@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+.intro::after {
+  grid-column: 1 / -1;
+  justify-self: center;
+  display: block;
+  content: "";
+  width: 90%;
+  height: 2px;
+  margin-top: 40px;
+  background: #4a2cc5;
+}
+
+.intro img {
+  width: 350px;
+}
+
+.intro h2::after {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #4a2cc5;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.intro-txt {
+  position: relative;
+}
+
+.intro p::after {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  background: url("../media/SVG/Decoracao-cubos.svg") no-repeat center;
+  position: absolute;
+  right: 0px;
+}
+
+.intro-botoes {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.intro-curriculo,
+.intro-github,
+.intro-linkedin {
+  padding: 6px 16px;
+  border: 1px solid #4a2cc5;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.intro-curriculo:hover,
+.intro-github:hover,
+.intro-linkedin:hover {
+  color: white;
+  scale: 1.05;
+  box-shadow: 20px 15px 20px -20px #000000;
+}
+
+.intro-curriculo:hover {
+  background: linear-gradient(#684adf, #4a2cc5);
+}
+
+.intro-github:hover {
+  background: linear-gradient(#5b6571, #23272d);
+}
+
+.intro-linkedin:hover {
+  background: linear-gradient(#1b7cdd, #0a66c2);
+}
+
+@media (max-width: 1300px) {
+  .intro p::after {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .intro-botoes a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .intro p {
+    font-size: 1.25rem;
+  }
+
+  .intro-botoes {
+    grid-column: 1;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-botoes a {
+    font-size: 1.5rem;
+  }
+
+  .intro img {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .intro-txt h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro img {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
